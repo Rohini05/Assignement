@@ -1,0 +1,11 @@
+def closure_exm(msg):
+
+    msg = "hi there"
+
+    def colsure_inner():
+        print(msg)
+    return colsure_inner
+
+
+colsure_obj = closure_exm("Hello there")
+colsure_obj()
